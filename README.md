@@ -1,8 +1,12 @@
-# Understanding WebAPIs architectures 
-## with Python, Flask & SQLAlchemy
+# Understanding WebAPIs architectures with Python, Flask & SQLAlchemy
 
 ## Introduction
-TODO
+Any software is nowadays embedded between Web Servers and WebAPIs. Communication between services, applications and (web) apps often takes place using **RESTful HTTP protocols**.
+
+The first Python approaches to this world usually occur with **Flask**. A **micro-framework** that - _fortunately_ - allows us to create web applications potentially **far from the monolithic style**.
+In fact, when the application starts to become more robust, it emerges the need to **define** and **design an architecture**.
+
+In this repository a small collection of **best practices** and examples of **architectural patterns** to promote the orderly development of WebAPIs.
 
 ## Examples
 TODO
