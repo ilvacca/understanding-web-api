@@ -12,6 +12,12 @@ In this repository a small collection of **best practices** and examples of **ar
 TODO
 
 ### 1. Our first Flask server
+This is the easiest example that can be realized in Flask: a website with a single route.
+
+#### 1.1. Routes
+| NAME | ROUTE |
+|---|---|
+| Index | / |
 
 ### 2. Multiple routing
 
