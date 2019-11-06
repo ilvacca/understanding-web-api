@@ -1,4 +1,4 @@
-# Understanding WebAPIs architectures with Python, Flask & SQLAlchemy
+# Understanding WebAPIs architectures with Python, Flask & SQLite/SQLAlchemy packages
 
 ## Introduction
 Any software is nowadays embedded between Web Servers and WebAPIs. Communication between services, applications and (web) apps often takes place using **RESTful HTTP protocols**.
@@ -11,6 +11,8 @@ In this repository a small collection of **best practices** and examples of **ar
 ## Examples
 TODO
 
+---
+
 ### 1. Our first Flask server
 This is the easiest example that can be realized in Flask: a website with a single route.
 
@@ -18,6 +20,8 @@ This is the easiest example that can be realized in Flask: a website with a sing
 | NAME | ROUTE |
 |---|---|
 | Index | / |
+
+---
 
 ### 2. Multiple routing
 In this example we extend the possibilities of our website by integrating a second page (_ex. Blog_).
@@ -27,6 +31,8 @@ In this example we extend the possibilities of our website by integrating a seco
 |---|---|
 | Index | / |
 | Blog | /blog |
+
+---
 
 ### 3a. Multiple routing with HTML
 It is possible to integrate HTML code into the responses of our website.
