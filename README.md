@@ -75,7 +75,7 @@ WebApi usually respond through JSON. Let's integrate a small dataset inside the 
 #### 5.1. Routes
 | NAME | ROUTE |
 |---|---|
-| Index | ```/ |
+| Index | ```/``` |
 | Welcome Page | ```/welcome/<your-name-here>``` |
 | Data | ```/api/data``` |
 
@@ -91,9 +91,9 @@ The approach shown in this example allows to communicate with a WebAPI in a flex
 #### 6.1. Routes
 | NAME | ROUTE | 
 |---|---|
-| Index | / | 
-| Welcome Page Structured | /welcome/<your-name-here> |
-| Welcome Page Unstructured | /welcome?user=<your-name-here> | 
+| Index | ```/``` | 
+| Welcome Page Structured | ```/welcome/<your-name-here>``` |
+| Welcome Page Unstructured | ```/welcome?user=<your-name-here>``` | 
 | Data | /api/data | 
 
 **Architecture:** Flat.
@@ -102,6 +102,7 @@ The approach shown in this example allows to communicate with a WebAPI in a flex
 ---
 
 ### 7. Responding with a JSON (II)
+In this example we join the experience matured in the examples (5) and (6).
 
 #### 7.1. Routes
 | NAME | ROUTE | 
@@ -116,6 +117,7 @@ The approach shown in this example allows to communicate with a WebAPI in a flex
 ---
 
 ### 8. Read data from files
+Here we expose readed data from a saved CSV file. Pandas package is used to read and query the data.
 
 #### 8.1. Routes
 | NAME | ROUTE | 
@@ -130,6 +132,7 @@ The approach shown in this example allows to communicate with a WebAPI in a flex
 ---
 
 ### 9. Read data from a DB
+Usually a Database is more suitable and secure to store and read data. In this case we use the simple SQLite3 package by still using a flat monolithic architecture.
 
 #### 9.1. Routes
 | NAME | ROUTE | 
@@ -161,7 +164,7 @@ In this example, WebAPI is split into a start point, a routing module and a DAO 
 ---
 
 ### 11. An architecture with DAO and Models (SQLAlchemy)
-Here the case of the same WebAPI using 
+Here the case of the same WebAPI using the more structured SQLAlchemy package. Here we also included Models to help interact easily with DBs.
 
 #### 11.1. Routes
 | NAME | ROUTE | 
