@@ -172,7 +172,7 @@ Here the case of the same WebAPI using
 | API - Insert new user in DB | ```/api/newUser?id=<id-here>&name=<name-here>&age=<age-here>``` |
 
 **Architecture:** Main, Routes (Controller) and DAO.
-**Data access:** DB and SQLite.
+**Data access:** DB and SQLAlchemy.
 
 ---
 
