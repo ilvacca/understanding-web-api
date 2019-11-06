@@ -9,7 +9,7 @@ In fact, when the application starts to become more robust, it emerges the need 
 In this repository a small collection of **best practices** and examples of **architectural patterns** to promote the orderly development of WebAPIs.
 
 ## Examples
-TODO
+Below is an illustration of the WebAPI examples listed in this repository.
 
 ---
 
@@ -79,6 +79,7 @@ WebApi usually respond through JSON. Let's integrate a small dataset inside the 
 | Welcome Page | ```/welcome/<your-name-here>``` |
 | Data | ```/api/data``` |
 
+**Architecture:** Flat.
 **Data access:** variable.
 
 ---
@@ -95,6 +96,7 @@ The approach shown in this example allows to communicate with a WebAPI in a flex
 | Welcome Page Unstructured | /welcome?user=<your-name-here> | 
 | Data | /api/data | 
 
+**Architecture:** Flat.
 **Data access:** variable.
 
 ---
@@ -108,6 +110,7 @@ The approach shown in this example allows to communicate with a WebAPI in a flex
 | API - Get all data | ```/api``` |
 | API - Query user by ID | ```/api/user?id=<id-here>``` |
 
+**Architecture:** Flat.
 **Data access:** variable.
 
 ---
@@ -121,28 +124,55 @@ The approach shown in this example allows to communicate with a WebAPI in a flex
 | API - Get all data | ```/api``` |
 | API - Query user by ID | ```/api/user?id=<id-here>``` |
 
+**Architecture:** Flat.
 **Data access:** CSV and Pandas.
 
 ---
 
 ### 9. Read data from a DB
 
-#### 9. Routes
+#### 9.1. Routes
 | NAME | ROUTE | 
 |---|---|
 | Index | ```/``` | 
 | API - Get all data | ```/api``` |
 | API - Query user by ID | ```/api/user?id=<id-here>``` |
 
+**Architecture:** Flat.
 **Data access:** DB and SQLite.
 
 ---
 
 ### 10. An architecture with DAO module (SQLite)
+The definition and design of an architecture becomes an increasingly important requirement as WebAPI grows.
+In this example, WebAPI is split into a start point, a routing module and a DAO (Data Access Object).
+
+#### 10.1. Routes
+| NAME | ROUTE | 
+|---|---|
+| Index | ```/``` | 
+| API - Infos about the API | ```/api``` |
+| API - Get all users | ```/api/users``` |
+| API - Insert new user | ```/api/newUser?id=<id-here>&name=<name-here>&age=<age-here>``` |
+
+**Architecture:** Main, Routes (Controller) and DAO.
+**Data access:** DB and SQLite.
 
 ---
 
 ### 11. An architecture with DAO and Models (SQLAlchemy)
+Here the case of the same WebAPI using 
+
+#### 11.1. Routes
+| NAME | ROUTE | 
+|---|---|
+| Index | ```/``` | 
+| API - Infos about the API | ```/api``` |
+| API - Get all users | ```/api/users``` |
+| API - Insert new user in DB | ```/api/newUser?id=<id-here>&name=<name-here>&age=<age-here>``` |
+
+**Architecture:** Main, Routes (Controller) and DAO.
+**Data access:** DB and SQLite.
 
 ---
 
